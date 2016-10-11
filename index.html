@@ -1,0 +1,55 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>五子棋</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+<audio controls src="mp3/棋子音效b.mp3"></audio>
+
+    <!--<canvas width="300" height="300" id="canvas2"></canvas>-->
+    <canvas width="500" height="500" id="canvas"></canvas>
+    <div class="bg">
+        <div class="wanjia1 bai">
+            <span>玩家1</span>
+            <!--<div class="time">00:00</div>-->
+            <div class="qizi"></div>
+        </div>
+        <div class="wanjia1 hei wanjia2">
+            <span>玩家2</span>
+            <!--<div class="time">00:00</div>-->
+            <div class="qizi"></div>
+        </div>
+        <ul class="menu">
+            <li class="start"><div></div> <span>开始游戏</span></li>
+            <div class="select">
+                <span class="renren">人人对战<input type="checkbox" /></span>
+                <span class="renji">人机对战<input  type="checkbox" checked='ture'/></span>
+                <div class="submit">确认</div>
+            </div>
+            <li class="reset"><div></div><span>再来一局</span></li>
+            <li class="huiqi"><div></div><span>悔棋</span></li>
+            <li class="jieshao"><div></div><span>游戏介绍</span></li>
+            <div class="content"><p>五子连珠就可以赢了,加油吧,少年!</p></div>
+            <li class="end n5"><div></div><span>退出游戏</span></li>
+        </ul>
+        <div class="tishi">
+            <div class="delete"></div>
+            <span class="title">很遗憾！！！</span>
+            <span class="font">你输了！！！</span>
+            <div class="zailai">再来一次</div>
+            <div class="guankan">点击观看棋谱</div>
+        </div>
+        <div class="next">
+            <span>请行棋</span>
+        </div>
+        <div class="guan">
+        </div>
+        <canvas id="canvas-time" width="120" height="120"></canvas>
+    </div>
+
+</body>
+</html>
